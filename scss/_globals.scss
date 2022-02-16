@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0; padding: 0;
+    transition: .4s ease;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+}
