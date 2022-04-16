@@ -13,3 +13,8 @@ $Verydarkblue: hsl(226, 43%, 10%);
 $Darkblue: hsl(235, 46%, 20%);
 $Desaturatedblue: hsl(235, 45%, 61%);
 $PaleBlue: hsl(236, 100%, 87%);
+
+//size function
+@function remUnit($unit) {
+    @return #{$unit / 16}rem;
+}

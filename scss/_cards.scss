@@ -1,0 +1,96 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(remUnit(190), remUnit(300)));
+    gap: remUnit(20);
+    .card_user {
+        background-color: $Darkblue;
+        display: flex;
+        flex-direction: column;
+        height: remUnit(182);
+        border-radius: remUnit(13);
+
+        &_info {
+            display: flex;
+            background-color: $blue; 
+            align-items: center;
+            justify-content: center;
+            height: 70%;
+            padding: remUnit(20);
+            border-radius: remUnit(13);
+
+            .img {
+                width: remUnit(64);
+                height: remUnit(64);
+                border-radius: 50%;
+                border: remUnit(2) solid white;
+                margin-right: remUnit(18);
+                img{
+                    width: 100%;
+                }
+            }
+
+            .details {
+                p{
+                    font-size: remUnit(15);
+                    color: $PaleBlue;
+                    margin-bottom: remUnit(5);
+                }
+
+                .name{
+                    font-size: remUnit(22);
+                    font-weight: 300;
+                    color: white;
+                }
+            }
+        }
+
+        .times{
+            font-size: remUnit(18);
+            display: flex;
+            margin-top: remUnit(14);
+            align-items:baseline;
+            justify-content:space-evenly;
+
+            a{
+                color: $Desaturatedblue;
+                font-weight: 300;
+            }
+            a:hover{
+                color: $PaleBlue;
+            }
+        }
+        
+    }
+
+    .card {
+        display: flex;
+        align-items:flex-end;
+        height: remUnit(140);
+        border-radius: remUnit(13);
+
+        .purple {
+            width: 110%;
+            height: 75%;
+            background-color: $Darkblue;
+            border-radius: remUnit(10);
+        }
+        &_work{
+            background-color: $lightRed;
+        }
+        &_play{
+            background-color: $softblue;
+        }
+        &_study{
+            background-color: $lightred;
+        }
+        &_exercise{
+            background-color: $limegreen;
+        }
+        &_social{
+            background-color: $violet;
+        }
+        &_selfcare{
+            background-color: $softorange;
+        }
+    }
+}
