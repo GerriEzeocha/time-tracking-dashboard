@@ -21,6 +21,10 @@ body{
     align-items: center;
     justify-content: space-evenly;
     padding: remUnit(50) remUnit(0);
+
+    @include breakpoints(laptop) {
+        height: 100vh;
+    }
 }
 
 .attribution {
