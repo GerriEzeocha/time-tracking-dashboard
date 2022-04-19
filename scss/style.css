@@ -71,8 +71,8 @@ body {
 
 @media (min-width: 1024px) {
   .container {
-    width: 45rem;
-    height: 50%;
+    width: 61rem;
+    height: 70%;
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
     -ms-grid-columns: (1fr)[4];
@@ -153,8 +153,8 @@ body {
 
 @media (min-width: 1024px) {
   .container .card_user_info .img {
-    width: 3.125rem;
-    height: 3.125rem;
+    width: 6.125rem;
+    height: 6.125rem;
   }
 }
 
@@ -173,7 +173,7 @@ body {
 
 @media (min-width: 1024px) {
   .container .card_user_info .details p {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
 
@@ -185,6 +185,7 @@ body {
 
 @media (min-width: 1024px) {
   .container .card_user_info .details .name {
+    font-size: 2.375rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -229,6 +230,7 @@ body {
 @media (min-width: 1024px) {
   .container .card_user .times a {
     margin-bottom: 0.625rem;
+    font-size: 1rem;
   }
 }
 
@@ -345,6 +347,13 @@ body {
   margin-bottom: 0.625rem;
 }
 
+@media (min-width: 1024px) {
+  .container .purple .desc #title {
+    font-weight: 300;
+    font-size: 1.5625rem;
+  }
+}
+
 .container .purple .desc .hrs {
   font-weight: 300;
   font-size: 1.5625rem;
@@ -352,7 +361,7 @@ body {
 
 @media (min-width: 1024px) {
   .container .purple .desc .hrs {
-    font-size: 1.875rem;
+    font-size: 2.875rem;
   }
 }
 
@@ -391,6 +400,12 @@ body {
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin-top: 0.625rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container .purple .desc .timing #previous {
+    font-size: 1rem;
   }
 }
 

@@ -11,8 +11,8 @@
 
     @include breakpoints(desktop){
         // background: yellow;
-        width: 45rem;
-        height: 50%;
+        width: 61rem;
+        height: 70%;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(4, 1fr);
     }
@@ -62,8 +62,8 @@
                 }
 
                 @include breakpoints(desktop) {
-                    width: remUnit(50);
-                    height: remUnit(50);
+                    width: remUnit(98);
+                    height: remUnit(98);
                 }
             }
 
@@ -76,7 +76,7 @@
                     color: $PaleBlue;
                     margin-bottom: remUnit(5);
                     @include breakpoints(desktop) {
-                        font-size: remUnit(12);
+                        font-size: remUnit(16);
                     }
                 }
 
@@ -86,6 +86,7 @@
                     color: white;
 
                     @include breakpoints(desktop) {
+                        font-size: remUnit(38);
                         display: flex;
                         flex-direction: column;
                     }
@@ -110,8 +111,10 @@
             a{
                 color: $Desaturatedblue;
                 font-weight: 300;
+
                 @include breakpoints(desktop) {
                     margin-bottom: remUnit(10);
+                    font-size: remUnit(16);
                 }
             }
             a:hover{
@@ -201,7 +204,10 @@
             #title {
                 font-weight: 500;
                 margin-bottom: remUnit(10);
-
+                @include breakpoints(desktop) {
+                    font-weight: 300;
+                    font-size: remUnit(25);
+                }
             }
 
             .hrs {
@@ -209,7 +215,7 @@
                 font-size: remUnit(25);
 
                 @include breakpoints(desktop) {
-                    font-size: remUnit(30);
+                    font-size: remUnit(46);
                 }
             }
 
@@ -231,6 +237,10 @@
                         font-size: remUnit(10);
                         align-self: flex-start;
                         margin-top: remUnit(10);
+                    }
+
+                    @include breakpoints(desktop) {
+                        font-size: remUnit(16);
                     }
                 }
             }
